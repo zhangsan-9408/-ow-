@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>上海哦喂信息科技有限公司 - 企业服务解决方案专家</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FF6B35',
+            secondary: '#FF9F1C',
+            dark: '#1E293B'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gradient-bg {
+      background: linear-gradient(135deg, #FF6B35 0%, #FF9F1C 100%);
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(255, 107, 53, 0.15);
+    }
+    .nav-link:hover {
+      color: #FF6B35;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- 导航栏 -->
+  <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <span class="text-2xl font-bold text-primary">哦喂科技</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="nav-link text-gray-700 font-medium transition-colors">首页</a>
+          <a href="about.html" class="nav-link text-gray-700 font-medium transition-colors">关于我们</a>
+          <a href="products.html" class="nav-link text-gray-700 font-medium transition-colors">产品服务</a>
+          <a href="contact.html" class="nav-link text-gray-700 font-medium transition-colors">联系我们</a>
+        </div>
+        <button class="md:hidden text-gray-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 首页 Banner -->
+  <section class="gradient-bg text-white pt-24 pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">企业数字化转型</h1>
+        <h2 class="text-2xl md:text-3xl font-light mb-8">一站式 IT/软件企业服务解决方案</h2>
+        <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90">
+          上海哦喂信息科技有限公司，专注于为企业提供财务、税务、费控、HR、OA、培训等全方位数字化解决方案
+        </p>
+        <div class="flex justify-center space-x-4">
+          <a href="products.html" class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+            了解产品
+          </a>
+          <a href="contact.html" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition-colors">
+            联系我们
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 产品概览 -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">核心产品</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">覆盖企业管理全场景，助力企业数字化升级</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 财务系统 -->
+        <div class="bg-gray-50 p-6 rounded-xl card-hover transition-all duration-300">
+          <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">用友财务系统</h3>
+          <p class="text-gray-600 text-sm">企业级财务核算与税务管理，多维度报表、智能税务合规</p>
+        </div>
+        <!-- 费控系统 -->
+        <div class="bg-gray-50 p-6 rounded-xl card-hover transition-all duration-300">
+          <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">合思费控系统</h3>
+          <p class="text-gray-600 text-sm">智能化费用管控，一键报销、预算控制、发票自动识别</p>
+        </div>
+        <!-- moka人事 -->
+        <div class="bg-gray-50 p-6 rounded-xl card-hover transition-all duration-300">
+          <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">moka人事系统</h3>
+          <p class="text-gray-600 text-sm">AI 智能招聘，全流程候选人管理，提升招聘效率</p>
+        </div>
+        <!-- 二号人事部 -->
+        <div class="bg-gray-50 p-6 rounded-xl card-hover transition-all duration-300">
+          <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">二号人事部</h3>
+          <p class="text-gray-600 text-sm">一站式 HR 解决方案，覆盖入职、考勤、薪资、绩效全流程</p>
+        </div>
+        <!-- 魔学院 -->
+        <div class="bg-gray-50 p-6 rounded-xl card-hover transition-all duration-300">
+          <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">魔学院培训系统</h3>
+          <p class="text-gray-600 text-sm">企业在线培训平台，课程管理、学习跟踪、考试测评一体化</p>
+        </div>
+        <!-- OA系统 -->
+        <div class="bg-gray-50 p-6 rounded-xl card-hover transition-all duration-300">
+          <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">飞书/钉钉 OA</h3>
+          <p class="text-gray-600 text-sm">企业协作平台，沟通协同 + 审批流程 + 考勤打卡 + 应用集成</p>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a href="products.html" class="inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors">
+          查看全部产品
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 优势 -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">为什么选择我们</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">专业团队 + 成熟产品 + 贴心服务</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">专业可靠</h3>
+          <p class="text-gray-600">多年企业服务经验，深谙企业数字化痛点</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">高效实施</h3>
+          <p class="text-gray-600">快速部署，缩短上线周期，让企业早受益</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">持续支持</h3>
+          <p class="text-gray-600">全程技术支持，售后无忧，保障系统稳定运行</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="bg-dark text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">哦喂科技</h3>
+          <p class="text-gray-400 text-sm">专注于企业数字化服务，助力企业实现数字化转型</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">快速链接</h3>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="index.html" class="hover:text-primary transition-colors">首页</a></li>
+            <li><a href="about.html" class="hover:text-primary transition-colors">关于我们</a></li>
+            <li><a href="products.html" class="hover:text-primary transition-colors">产品服务</a></li>
+            <li><a href="contact.html" class="hover:text-primary transition-colors">联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">联系方式</h3>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li>📍 上海市</li>
+            <li>📧 contact@owei.com</li>
+            <li>📞 400-XXX-XXXX</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2026 上海哦喂信息科技有限公司 版权所有</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
